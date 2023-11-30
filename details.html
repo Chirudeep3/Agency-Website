@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Availability</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .availability {
+            background-image: url('back2.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        h3 {
+            color: aliceblue;
+            margin-bottom: 20px;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .centered-text {
+            text-align: center;
+            margin-top: 20px;
+            line-height: 1.5;
+            color: aliceblue;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #333;
+            color: #d64e4e;
+        }
+
+        @media (min-width: 768px) {
+            /* Tablets and larger screens */
+            .availability {
+                padding: 150px 20px;
+            }
+        }
+        .calendar-container {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        /* Additional styling for the calendar */
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            text-align: center;
+        }
+
+        .calendar button {
+            padding: 10px;
+            border: none;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<script src="script.js"></script>
+<body>
+    <section class="availability">
+        <h3>APPLICATIONS ARE OPEN</h3>
+        <video controls>
+            <source src="D:\Movies\ADD.mp4" type="video/mp4">
+        </video>
+   <!--      <section class="availability">
+            <button id="openCalendar">Check Availability</button>
+            <div class="calendar-container" id="calendarContainer">
+                <div class="calendar" id="calendar"></div>
+                <button id="submitDate">Submit</button>
+            </div>
+        </section>
+        <div class="admin-window" id="adminWindow">
+            <div class="admin-content" id="adminContent">
+                <span id="selectedDateText"></span>
+                <button id="closeAdminWindow">Close</button>
+            </div>
+        </div>  -->  
+        <br>
+        <input type="date" id="demo">
+        <button id="setDateButton">Book Now</button>
+        <div id="adminWindow" style="display: none;">
+            <p>Selected Date: <span id="selectedDateText"></span></p>
+        </div>
+        <br>  
+        <div class="centered-text">
+            <p>TEXT</p>
+            
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Synergy Media. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

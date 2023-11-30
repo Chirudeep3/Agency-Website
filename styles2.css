@@ -1,0 +1,421 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+/* Style the container with fixed height to crop the image */
+.image1{
+  text-align: center;
+  background-color: #070607;
+}
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+}
+.header {
+  background-color: #6dd7de;
+  color: #333;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+.nav ul li {
+  margin: 1px;
+}
+.nav ul li a {
+  color: #ff6600;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 10px 15px; /* Add padding for better click area */
+  border-radius: 5px;
+}
+.nav ul li a:hover {
+  color: #f0e9f0;
+  background-color: #060204; /* Hover background color */
+}
+
+/* Optional: Adding a subtle underline effect */
+.nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #5b0a67; /* Underline color */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+  opacity: 0; /* Hide by default */
+}
+
+.nav ul li a:hover::after {
+  width: 100%;
+  opacity: 1; /* Show on hover */
+}
+ .container4{
+  margin-left: 20px;
+} 
+  .hero {
+    background-image: url('sm.png');
+    background-size: cover;
+    color: #e0d65e;
+    text-align: left;
+    font-weight: 700;
+    padding: 200px 0;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Tablet Styles */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 100px 0;
+    }
+    .hero-title {
+      font-size: 30px; /* Adjust title font size for tablets */
+      margin-bottom: 20px; /* Adjust margin for tablets */
+    }
+    .hero-subtitle {
+      font-size: 16px; /* Adjust subtitle font size for tablets */
+      margin-bottom: 10px; /* Adjust margin for tablets */
+    }
+  }
+/* Default styles for all screen sizes */
+.btn {
+    display: inline-block;
+    background-color: #9645b3;
+    color: #f8f8f8;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+.btn:hover {
+    background-color: #133b98;
+}
+/* Center the form container */
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the form and button */
+.form-container form {
+  margin-bottom: 10px;
+}
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-container button:hover {
+  background-color: #0056b3;
+}
+.services {
+    padding: 60px 0;
+    background-image:url('back2.jpg');
+}
+.section-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #22bebe;
+}
+.service {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.service img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+.service h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #057ac3f1;
+    font-weight: 900;
+}
+.service p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #f4f3f2;
+    line-height: 1.6;
+}
+.highlight{
+  background-color: #8dcf96; /* Change the background color as needed */
+   padding: 10px;
+   border: 1px solid #627996; /* Add a border as needed */
+   border-radius: 5px;
+   overflow: auto;
+   font-family: 'Courier New', monospace; /* Use a monospace font for code */
+   font-size: 14px;
+   color: #333;
+}
+
+
+
+/* Create a class for your specific element or section */
+.my-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150%;
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply styles to the #earth element within your specific section */
+.my-section #earth {
+  width: 300px;
+  height: 300px;
+  background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
+  border-radius: 50%;
+  background-size: 610px;
+  
+  box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0),
+              inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+  animation-name: rotate;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 12s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  /* Increase brightness in the top side using a linear gradient mask */
+  filter: brightness(2);
+  overflow: hidden;
+}
+
+@keyframes rotate {
+  from { background-position: 0px 0px; }
+  to { background-position: 500px 0px; }
+}
+
+@-webkit-keyframes rotate {
+  from { background-position: 0px 0px; }
+  to { background-position: 500px 0px; }
+}
+
+
+
+
+
+
+
+.main-container {
+  text-align: center;
+  background-color: #2f353e; /* Light background color */
+  padding: 20px;
+  border-radius: 20px; /* Adds slight curvature to the corners */
+  max-width: 800px; /* Optional: Set a max-width for the main container */
+  margin: 0 auto; /* Optional: Center the main container horizontally */
+}
+/* Styles for the main heading */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+/* Styles for the container */
+.container1 {
+  display: flex;
+  flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+  justify-content: space-between;
+}
+/* Styles for rows */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Spacing between the rows */
+}
+/* Styles for individual boxes */
+.box {
+  flex: 0 0 calc(50% - 10px); /* Two boxes per row with spacing */
+  text-align: center;
+  border-radius: 10px; /* Adds slight curvature to the corners */
+  background-color: #3b507d; /* White background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for a slight elevation */
+  box-sizing: border-box;
+  padding: 20px;
+  
+}
+/* Styles for the "About Us" heading inside boxes */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+/* Random content styles inside boxes */
+.box p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: whitesmoke;
+}
+
+/* Media query for smaller screens (e.g., tablets and mobile devices) */
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Stack boxes vertically */
+  }
+  .box {
+    flex: 2; /* One box per row on smaller screens */
+    margin-top: 20px; /* Spacing between boxes */
+    padding: 20px;
+    width: 100%; /* Full width for each box */
+  }
+}
+
+/* Styles for the "About Us" heading inside boxes */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Random content styles inside boxes */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Media query for smaller screens (e.g., tablets and mobile devices) */
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Stack boxes vertically */
+  }
+  .box {
+    flex: 1; /* One box per row on smaller screens */
+    margin-bottom: 10px; /* Spacing between boxes */
+    width: 100%; /* Full width for each box */
+  }
+}
+.contact {
+  padding: 60px 0;
+  position: relative;
+  text-align: left;
+}  
+.contact-bg {
+  background-image: url('contatct2.jpg');
+  background-color: #98eeee;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 32vh;
+}
+.contact-content {
+  text-align: center;
+  color: #2496c3;
+  font-weight: 800;
+  border: 2px solid #2496c3;
+  border-radius: 20px;
+  border-width: 2px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  margin: auto;
+}
+  .contact h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #1c27c1;
+    font-weight: 800;
+  }
+  .contact p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .contact-info {
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .contact-info li {
+    font-size: 16px;
+    color: #172cba;
+    margin-bottom: 8px;
+  }
+  .contact-info a {
+    color: #e74c3c;
+    text-decoration:italic ;
+    transition: color 0.3s;
+  }
+  .contact-info a:hover {
+    color: #030103;
+  }
+.footer {
+     display: flex;
+     text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: #d64e4e;
+}
+h6,h3{
+  font-size: 18px;
+  margin-bottom: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.popup {
+    background-color: rgb(192, 67, 177);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
